@@ -150,7 +150,41 @@ output_path = Path('../python-homework/PyRamen/PyRamen_Report.txt')
 with open(output_path, 'w') as file:
     file.write("PyRamen Report\n")
     file.write(str(report))
+    
+# Open the file in "read" mode ('r') and store the
+# contents in the variable "text"
+# Open the file in "read" mode ('r') and store the
+# contents in the variable "text"
+for i in items:
+    if i in sales_item:
+        with open(output_path, 'w') as file:
+            file.write(str(report))
+        
+# open file to read       
+        file = open(output_path, 'r')
+        for line in file:
+            row_count += 1
+        print(f"{row_count}. {i} : {line}")
+        
+"""
+Output:
 
+1. nagomi shoyu : {'01-count': 0, '02-revenue': 0, '03-cogs': 0, '04-profit': 0}
+2. shio ramen : {'01-count': 0, '02-revenue': 0, '03-cogs': 0, '04-profit': 0}
+3. spicy miso ramen : {'01-count': 0, '02-revenue': 0, '03-cogs': 0, '04-profit': 0}
+4. vegetarian spicy miso : {'01-count': 0, '02-revenue': 0, '03-cogs': 0, '04-profit': 0}
+5. miso crab ramen : {'01-count': 0, '02-revenue': 0, '03-cogs': 0, '04-profit': 0}
+6. soft-shell miso crab ramen : {'01-count': 0, '02-revenue': 0, '03-cogs': 0, '04-profit': 0}
+7. tori paitan ramen : {'01-count': 0, '02-revenue': 0, '03-cogs': 0, '04-profit': 0}
+8. tonkotsu ramen : {'01-count': 0, '02-revenue': 0, '03-cogs': 0, '04-profit': 0}
+9. burnt garlic tonkotsu ramen : {'01-count': 0, '02-revenue': 0, '03-cogs': 0, '04-profit': 0}
+10. vegetarian curry + king trumpet mushroom ramen : {'01-count': 0, '02-revenue': 0, '03-cogs': 0, '04-profit': 0}
+11. truffle butter ramen : {'01-count': 0, '02-revenue': 0, '03-cogs': 0, '04-profit': 0}
+
+"""
+
+# They sold 11 types of ramen listed on menu 
+        
 """
 References:
 
